@@ -1,0 +1,17 @@
+<form method="POST">
+<header>
+    <h1><input name="title" value=<?= $title ?>></h1>
+</header>
+<section>
+    <div>
+        <label>Url:</label><input name="url" value=<?= "'".$url."'" ?> />
+        <label>Popis:</label><input name="description" value=<?= "'".$description."'" ?> />
+        <label>Klíčová slova:</label><input name="key_words" value=<?= "'".$key_words."'" ?> />
+    </div>
+</section>
+<section>
+    <textarea name="content">
+    <?= $content ?>
+    </textarea>
+    <button>Odeslat</button>
+</section>

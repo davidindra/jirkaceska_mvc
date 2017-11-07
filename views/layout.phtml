@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+    <head>
+        <base href="/localhost" />
+        <meta charset="UTF-8" />
+        <title><?= $title ?></title>
+        <meta name="description" content="<?= $description ?>" />
+        <meta name="keywords" content="<?= $key_words ?>" />
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+    </head>
+
+    <body>
+        <header>
+            <h1>DevbookMVC - ukázkový web</h1>
+            <nav>
+                <ul>
+                    <li><a href="clanek/uvod">Úvod</a></li>
+                    <li><a href="clanek">Články</a></li>
+                    <li><a href="kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+        <article>
+            <?php $this->controller->returnView(); ?>
+        </article>
+    </body>
+</html>
