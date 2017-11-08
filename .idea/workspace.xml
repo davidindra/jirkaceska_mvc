@@ -1,25 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="075a34a8-ca41-475b-bdfd-eb43933b6ad6" name="Default" comment="More MVC-like code style">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/Article.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/htdocs.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+    <list default="true" id="075a34a8-ca41-475b-bdfd-eb43933b6ad6" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/ArticleController.php" afterPath="$PROJECT_DIR$/controllers/ArticleController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/ContactController.php" afterPath="$PROJECT_DIR$/controllers/ContactController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/Controller.php" afterPath="$PROJECT_DIR$/controllers/Controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/EditArticleController.php" afterPath="$PROJECT_DIR$/controllers/EditArticleController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/NotFoundController.php" afterPath="$PROJECT_DIR$/controllers/NotFoundController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/RouterController.php" afterPath="$PROJECT_DIR$/controllers/RouterController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/ArticleManager.php" afterPath="$PROJECT_DIR$/models/ArticleManager.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/article.phtml" afterPath="$PROJECT_DIR$/views/article.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/article_edit.phtml" afterPath="$PROJECT_DIR$/views/article_edit.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/articles.phtml" afterPath="$PROJECT_DIR$/views/articles.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layout.phtml" afterPath="$PROJECT_DIR$/views/layout.phtml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -289,12 +272,20 @@
       <updated>1509633201649</updated>
       <workItem from="1509633203477" duration="17470000" />
       <workItem from="1510094237543" duration="5944000" />
-      <workItem from="1510100244493" duration="7000" />
+      <workItem from="1510100244493" duration="46000" />
     </task>
+    <task id="LOCAL-00001" summary="More MVC-like code style">
+      <created>1510100283406</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1510100283406</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23421000" />
+    <option name="totallyTimeSpent" value="23460000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -508,6 +499,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="43" lean-forward="false" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -653,6 +645,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
