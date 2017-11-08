@@ -11,7 +11,10 @@ abstract class Controller
 
     protected $data = array();
     protected $view = "";
-    protected $header = array('title' => '', 'key_words' => '', 'description' => '');
+
+    protected $pageTitle = "DevbookMVC";
+    protected $metaKeywords = "devbook, mvc, jirkaceska";
+    protected $metaDescription = "DevbookMVC - pokus o MVC CMS";
 
     abstract function process($params);
 

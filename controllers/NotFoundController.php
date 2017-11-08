@@ -12,8 +12,10 @@ class NotFoundController extends Controller
     {
         // Hlavička požadavku
         header("HTTP/1.0 404 Not Found");
+
         // Hlavička stránky
-        $this->header['title'] = 'Chyba 404';
+        $this->pageTitle = 'Chyba 404';
+
         // Nastavení šablony
         $this->view = 'notFound';
     }

@@ -1,7 +1,7 @@
 <header>
-    <h1><?= $title ?></h1>
+    <h1><?= $article->title ?></h1>
 </header>
 <section>
-    <?= $_content ?>
+    <?= $article->content ?>
 </section>
-<a href=<?= "article/".$url."/edit"?>>Upravit</a>
+<a href="<?= "article/" . $article->slug . "/edit"?>">Upravit</a>

@@ -11,39 +11,37 @@ class EditArticleController extends Controller
     public function process($params)
     {
         // Vytvoření instance modelu, který nám umožní pracovat s články
-        $loadArticle = new ArticleManager();
+        $articleManager = new ArticleManager();
 
         // Získání článku podle URL
-        $article = $loadArticle->getArticle($params[0]);
+        $article = $articleManager->getArticle($params[0]);
 
         // Hlavička stránky
-        $this->header = array(
-            'title' => $article['title'],
-            'key_words' => $article['key_words'],
-            'description' => $article['description'],
-        );
+        $this->pageTitle = $article->title;
+        $this->metaDescription = $article->description;
+        $this->metaKeywords = $article->keyWords;
 
         // Naplnění proměnných pro šablonu
-        $this->data['title'] = $article['title'];
-        $this->data['content'] = $article['content'];
-        $this->data['url'] = $article['url'];
-        $this->data['description'] = $article['description'];
-        $this->data['key_words'] = $article['key_words'];
+        $this->data['article'] = $article;
 
         if (isset($_POST) && count($_POST)) {
-            $_POST = $this->trimValues($_POST);
-            $this->data = $this->trimValues($this->data);
+            $data = $this->trimValues($_POST);
 
-            if ($_POST != $this->data) {
-               $loadArticle->updateArticle($_POST, $article['article_id']);
-                echo "Změna";
-            }
+            $newArticle = new Article();
 
-             $this->redirect("article/".$article['url']);
+            $newArticle->id = $data['id'];
+            $newArticle->slug = $data['url'];
+            $newArticle->keyWords = $data['key_words'];
+            $newArticle->title = $data['title'];
+            $newArticle->description = $data['description'];
+            $newArticle->content = $data['content'];
+
+            $articleManager->updateArticle($newArticle);
+
+            echo "Článek byl změněn.";
+
+            $this->redirect("article/" . $article->slug);
         }
-
-
-
 
         $this->view = 'article_edit';
     }

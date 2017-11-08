@@ -27,9 +27,10 @@ class RouterController extends Controller
 
         $this->controller->process($parsedURL);
 
-        $this->data['title'] = $this->controller->header['title'];
+        // TODO: not sure whether this can be removed, I don't understand the background
+        /*$this->data['title'] = $this->controller->header['title'];
         $this->data['description'] = $this->controller->header['description'];
-        $this->data['key_words'] = $this->controller->header['key_words'];
+        $this->data['key_words'] = $this->controller->header['key_words'];*/
 
         $this->view = 'layout';
     }

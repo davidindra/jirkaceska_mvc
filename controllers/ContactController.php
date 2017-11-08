@@ -10,11 +10,9 @@ class ContactController extends Controller
 {
     public function process($params)
     {
-        $this->header = array(
-            'title' => 'Kontaktní formulář',
-            'key_words' => 'kontakt, email, formulář',
-            'description' => 'Kontaktní formulář našeho webu.'
-        );
+        $this->pageTitle = 'Kontaktní formulář';
+        $this->metaDescription = 'Kontaktní formulář našeho webu.';
+        $this->metaKeywords = 'kontakt, email, formulář';
 
         if (isset($_POST["email"])) {
             if ($_POST['year'] == date("Y")) {

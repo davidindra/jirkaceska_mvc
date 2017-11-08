@@ -3,8 +3,8 @@
     <?php foreach ($articles as $article) : ?>
         <tr>
             <td>
-                <h2><a href="article/<?= $article['url'] ?>"><?= $article['title'] ?></a></h2>
-                <?= $article['description'] ?>
+                <h2><a href="article/<?= $article->slug ?>"><?= $article->title ?></a></h2>
+                <?= $article->description ?>
             </td>
         </tr>
     <?php endforeach ?>
